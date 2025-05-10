@@ -1,0 +1,14 @@
+[DEFAULT]
+bantime = 1h
+findtime = 10m
+maxretry = 3
+backend = systemd
+destemail = root@localhost
+sender = root@localhost
+mta = sendmail
+action = %(action_mwl)s
+
+[sshd]
+enabled = true
+port = ssh
+logpath = /var/log/auth.log
